@@ -1,0 +1,51 @@
+Goal:
+
+Draw contours to all objects and textures in the image.
+You must draw one contour for each texture in the image.
+Some examples of possible segmentation are available in the folder "examples".
+
+################################################
+Labeling Software Interface:
+
+To start this software open MATLAB, navigate to the folder "Labeling Tool" and run 'startLabeling.m' 
+
+The labeling software has 3 windows:
+	Main window: The large window on the right side will show de image. This is where the contours should be drawn.
+	Zoom Window: The top left window has buttons to zoom in/out and an overview of the image. 
+		The zoom buttons are on the toolbar of that window. Default zoom is 100%, so the image may not be entire visible depending on your monitor resolution.
+	Action Window: The bottom left window contains a popup menu for selecting the next action after a contour is inputed:
+		"New contour", "Finish labeling" or "Edit Contour 'X'". This menu is not visible while inserting or editing contours.
+
+To stop this software just close it's  windows. 
+You can resume the labeling later running it again.
+
+################################################
+Guidelines to define contours:
+
+To draw a contour, make a closed polygon in the image, clicking on the vertice locations.
+Be as accurate as possible when assigning the vertices. Use as many vertices as needed.
+After the polygon has been closed, it can be adjusted by dragging the vertices to the desired locations.
+(The cursor will change to a circle when pointing to a vertice).
+To add a vertex to a closed conturn hold "a" and click in an edge. 
+To remove a vertex of a closed conturn right click on the vertex and select "delete vertex".
+
+OBS: 
+ - You can drag vertices outside the image to define regions in the image limits.
+ - A new contour will overlap any previous ones.
+ - You don't need to do all images at once. you can stop by closing the windows
+ 
+################################################
+Quick Instructions:
+
+0) on MATLAB, navigate to the folder "Labeling Tool"
+1) run 'startLabeling.m' 
+2) define a contour by drawing a polygon (click to create vertices).
+3) make ajustments to the polygon (drag and drop the vertices).
+4) double-click inside the polygon to record that contour
+5) choose the next operation on the menu in the left window:
+	A) New contour: Repeat the steps 2 to 5 (previous ones will appear as red lines in the image)
+	B) Finish labeling:  Save all contours and go to next image.
+	C) Edit Contour 'X': a previously inputed contour (all current contours will appear as red lines in the image).
+
+To stop this software just close it's  windows. 
+You can resume it later repeating the steps above.
