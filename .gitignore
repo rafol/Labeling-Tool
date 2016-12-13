@@ -1,0 +1,19 @@
+# latex aux files
+#*.aux
+#*.bbl
+#*.blf
+#*.blg
+#*.log
+#*.out
+#*.spl
+#*.synctex.gz
+#*.pdf
+
+# osx specific files
+*.DS_Store
+
+# figures folder
+#figures_v*
+
+# temporary files
+temp/
